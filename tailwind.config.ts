@@ -1,5 +1,6 @@
 import type { Config } from 'tailwindcss';
 
+
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,6 +9,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+        fontFamily: {
+            inter: ['var(--font-inter)'],
+            lusitana: ['var(--font-lusitana)'],
+            robotoMono: ['var(--font-roboto-mono)'],
+        },
       gridTemplateColumns: {
         '13': 'repeat(13, minmax(0, 1fr))',
       },
